@@ -3,18 +3,16 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 56px;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --white-color: hsl(0, 0%, 96%);
-  --black-color: hsl(0, 0%, 0%);
+  --white-color: #f5f5f5;
+  --black-color: #000000;
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Space Grotesk", sans-serif;
-  --biggest-font-size: 3rem;
-  --normal-font-size: .938rem;
+  --biggest-font-size: 48px;
+  --normal-font-size: 15px;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -28,9 +26,9 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 6.5rem;
-    --big-font-size: 2rem;
-    --normal-font-size: 1rem;
+    --biggest-font-size: 104px;
+    --big-font-size: 32px;
+    --normal-font-size: 16px;
   }
 }
 
@@ -65,7 +63,7 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  margin-inline: 24px;
 }
 
 .main {
