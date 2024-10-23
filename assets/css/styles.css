@@ -145,7 +145,130 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container{
+  padding-top: 120px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 320px;
+  row-gap: 32px;
+}
 
+.home__data{
+  text-align: center;
+}
+
+.home__subtitle{
+  font-size: var(--normal-font-size);
+  margin-bottom: 8px;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  -webkit-text-stroke: 5px var(--black-color);
+  color: var(--white-color);
+  paint-order: stroke;
+  filter: drop-shadow(-4px 4px 0 var(--black-color));
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.home__description{
+padding-inline: 28px;
+margin-bottom: 32px;
+}
+
+.home__button{
+  display: inline-flex;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: var(--font-bold);
+  padding: 16px 24px;
+  transition: box-shadow 0.4s;
+  cursor: pointer;
+}
+
+.home__button:hover{
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.home__images{
+  position: relative;
+}
+
+.home__images [class*=home__blob] {
+  background-color: var(--black-color);
+  position: absolute;
+}
+
+.home__images [class*=home__img] {
+  position: absolute;
+}
+
+.home__blob-1{
+  width: 150px;
+  height: 180px;
+  border-radius: 38% 62% 66% 34%/60% 41% 59% 40%;
+  top: -32px;
+  left: -64px;
+  animation: blob-1 4s linear infinite;
+}
+.home__img-1{
+  width: 100px;
+  top: 12px;
+  right: 16px;
+}
+
+.home__blob-2{
+ width: 200px;
+ height: 195px;
+ border-radius: 59% 41% 19% 81%/34% 72% 28% 66%;
+ top: -128px;
+ right: -132px;
+ animation: blob-2 4s linear infinite;
+}
+.home__img-2{
+  width: 120px;
+  bottom: 80px;
+  left: 0;
+}
+
+.home__blob-3{
+  width: 200px;
+  height: 190px;
+  border-radius: 57% 43% 40% 60%/49% 34% 66% 51%;
+  left: -80px;
+  bottom: -72px;
+  animation: blob-3 4s linear infinite;
+ }
+.home__img-3{
+  width: 100px;
+  top: 16px;
+  right: 32px;
+}
+
+.home__blob-4{
+  width: 300px;
+  height: 290px;
+  border-radius: 78% 22% 20% 80%/53% 46% 54% 47%;
+  right: -144px;
+  bottom: -64px;
+  animation: blob-4 4s linear infinite;
+}
+.home__img-4{
+  width: 200px;
+  left: -16px;
+  bottom: 16px;
+}
+
+.home__img-5{
+  width: 150px;
+  left: 0;
+  right: -64px;
+  margin: 0 auto;
+  top: 16px;
+  rotate: 15deg;
+  z-index: -1;
+}
 
 /* Animate blobs */
 
